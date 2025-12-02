@@ -131,9 +131,9 @@ def plot_png():
         g = df[df['sim_id'] == sid]
         ax.plot(g['day'], g['price'], alpha=0.7, linewidth=1)
 
-    ax.set_title(f"Sample Monte Carlo trajectories ({ticker if ticker else 'all'})")
-    ax.set_xlabel("Day")
-    ax.set_ylabel("Price")
+    ax.set_title(f"Muestra de trayectorias Monte Carlo ({ticker if ticker else 'all'})")
+    ax.set_xlabel("Dia")
+    ax.set_ylabel("Precio")
     ax.grid(True)
 
     # convertir a PNG en memoria

@@ -7,7 +7,7 @@ import pandas as pd
 HOST = "0.0.0.0"
 PORT = 9000
 
-def calc_params(ticker, years=5):
+def calc_params(ticker, years):
     df = yf.download(ticker, period=f"{years}y", progress=False)
     if df.empty:
         raise RuntimeError("No data for ticker " + ticker)

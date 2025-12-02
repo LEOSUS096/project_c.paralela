@@ -25,9 +25,6 @@ double simulate_one_path(double S0, double mu, double sigma, int steps, std::mt1
     return S;
 }
 
-// ------------------------------------------------------------
-// MAIN
-// ------------------------------------------------------------
 int main(int argc, char** argv) {
 
     if (argc < 9) {
